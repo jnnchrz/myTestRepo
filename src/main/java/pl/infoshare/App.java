@@ -1,5 +1,7 @@
 package pl.infoshare;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -7,8 +9,9 @@ package pl.infoshare;
 public class App 
 {
     public static void main( String[] args )
-    { byte age = "28";
-    String hometown = "rumia";
-        System.out.println(age + "\n" + hometown);
+    { Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj liczbe: ");
+         
+        System.out.println();
     }
-}
+
