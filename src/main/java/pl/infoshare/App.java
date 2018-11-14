@@ -1,45 +1,54 @@
 package pl.infoshare;
+//import pl.infoshare.Cat;
 
-
-import java.util.Random;
+/* Zadanie 1 31.10.2018*/
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        //ZADANIE 1 15.10
-int [] array = new int [11];
-Random random = new Random();
-int randomInt = random.nextInt(100) + 1;
-for (int i = 0; i < array.length ; i++) {
-    array[i] = random.nextInt(100) + 1;
-}
-for(int i = 0; i < array.length; i++) {
-if (i % 2 != 0) System.out.println("Index no. " + i + "\tvalue " + array[i]);
-}
+        System.out.print("Provide Username: ");
+        String username = readUserInput();
 
+        System.out.print("Provide Password: ");
+        String password = readUserInput();
 
-for(int i = 0; i <= 10 ; i ++) {
-    System.out.println(i);
+        User user = new User(username, password);
+        System.out.println("Stworzono uzytkownika " + user.getUsername() + "\t\t" + "O hasle: " + user.getPassword());
 
-//
+    }
 
-
-// ZADANIE 3 15.10
-        int winningNumber = new Random().nextInt(10) + 1;
-
+    private static String readUserInput(){
         Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
 
-        while (true) {
-            System.out.print("Podaj liczbe od 1 do 10: ");
-            int userNumber = scanner.nextInt();
-            if (userNumber < 1 || userNumber > 10) {
-                System.out.println("Podales liczbe z innego przedzialu!");
-            }
-            if (userNumber == winningNumber) System.out.println("WYGRALES!");
-            break;
-        }
-            else System.out.println("GRAJ DALEJ :-(");
-        }
+
+//    pl.infoshare.Calculator calculator = new pl.infoshare.Calculator();
+//
+////    {
+////        System.out.println(calculator.add(5, 5));
+////        System.out.println(calculator.substract(5, 5));
+////        System.out.println(calculator.multiply(5, 5));
+////        System.out.println(calculator.divide(5, 5));
+////
+////
+////    }
+//    public static void main (String[] args){
+//        System.out.println(;);
+//
+//    }
+//
+//
+//    public static void changeabc (abc){
+//        System.out.println( =changeabc();+= "X");
+//    }
+//
+//        {
+//            Cat cat = new Cat;
+//
+//            System.out.println(cat.numberofLegs);
+//            System.out.println(cat.);
+//
+//            Dog dog = new Dog;
+//        }
     }
 }
-
