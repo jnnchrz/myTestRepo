@@ -22,6 +22,6 @@ public class Wykladowca extends Osoba {
 
     @Override
     public String toString() {
-        return super.toString() + "Tytul naukowy: " + tytulNaukowy;
+        return super.toString() + "Tytul naukowy: " + tytulNaukowy + "\n";
     }
 }

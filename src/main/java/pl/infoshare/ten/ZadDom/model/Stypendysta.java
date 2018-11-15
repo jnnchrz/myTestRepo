@@ -21,6 +21,6 @@ public class Stypendysta extends Student {
 
     @Override
     public String toString() {
-        return super.toString() + "Kwota stypendium: " + stypendium + "/n";
+        return super.toString() + "Kwota stypendium: " + stypendium + "\n";
     }
 }

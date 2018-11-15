@@ -46,4 +46,3 @@ public class Osoba {
                 "\nPlec: " + sex + "\n";
     }
 }
-}
